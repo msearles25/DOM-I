@@ -52,3 +52,44 @@ links[0].textContent = siteContent.nav['nav-item-1'];
 links[1].textContent = siteContent.nav['nav-item-2'];
 links[2].textContent = siteContent.nav['nav-item-3'];
 links[3].textContent = siteContent.nav['nav-item-4'];
+
+const ctaText = document.querySelector('h1');
+ctaText.textContent = siteContent['cta']['h1'];
+
+const btn = document.querySelector('button');
+btn.textContent = siteContent['cta']['button'];
+
+// one
+const topCon1 = document.querySelector('.top-content div:nth-of-type(1) h4');
+topCon1.textContent = siteContent['main-content']['features-h4'];
+
+const para1 = document.querySelector('.top-content div:nth-of-type(1) p');
+para1.textContent = siteContent['main-content']['features-content'];
+
+// two
+const topCon2 = document.querySelector('.top-content div:nth-of-type(2) h4');
+topCon2.textContent = siteContent['main-content']['about-h4'];
+
+const para2 = document.querySelector('.top-content div:nth-of-type(2) p');
+para2.textContent = siteContent['main-content']['about-content'];
+
+// bottom one
+const bottomCon1 = document.querySelector('.bottom-content div:nth-of-type(1) h4');
+bottomCon1.textContent = siteContent['main-content']['services-h4'];
+
+const para3 = document.querySelector('.bottom-content div:nth-of-type(1) p');
+para3.textContent = siteContent['main-content']['services-content'];
+
+// bottom two
+const bottomCon2 = document.querySelector('.bottom-content div:nth-of-type(2) h4');
+bottomCon2.textContent = siteContent['main-content']['product-h4'];
+
+const para4 = document.querySelector('.bottom-content div:nth-of-type(2) p');
+para4.textContent = siteContent['main-content']['product-content'];
+
+// bottom three
+const bottomCon3 = document.querySelector('.bottom-content div:nth-of-type(3) h4');
+bottomCon3.textContent = siteContent['main-content']['vision-h4'];
+
+const para5 = document.querySelector('.bottom-content div:nth-of-type(3) p');
+para5.textContent = siteContent['main-content']['vision-content'];
