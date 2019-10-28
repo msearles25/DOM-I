@@ -42,7 +42,13 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const cta = document.getElementById('cta-img');
-cta.src = '../img/header-img.png';
+cta.src = siteContent['cta']['img-src'];
 
 const middle = document.getElementById('middle-img');
-middle.src = '../img/mid-page-accent.jpg';
+middle.src = siteContent["main-content"]["middle-img-src"];
+
+const links = document.getElementsByTagName('a');
+links[0].textContent = siteContent.nav['nav-item-1'];
+links[1].textContent = siteContent.nav['nav-item-2'];
+links[2].textContent = siteContent.nav['nav-item-3'];
+links[3].textContent = siteContent.nav['nav-item-4'];
