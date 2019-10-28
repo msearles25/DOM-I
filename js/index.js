@@ -59,14 +59,14 @@ ctaText.textContent = siteContent['cta']['h1'];
 const btn = document.querySelector('button');
 btn.textContent = siteContent['cta']['button'];
 
-// one
+//top one
 const topCon1 = document.querySelector('.top-content div:nth-of-type(1) h4');
 topCon1.textContent = siteContent['main-content']['features-h4'];
 
 const para1 = document.querySelector('.top-content div:nth-of-type(1) p');
 para1.textContent = siteContent['main-content']['features-content'];
 
-// two
+//top two
 const topCon2 = document.querySelector('.top-content div:nth-of-type(2) h4');
 topCon2.textContent = siteContent['main-content']['about-h4'];
 
@@ -93,3 +93,22 @@ bottomCon3.textContent = siteContent['main-content']['vision-h4'];
 
 const para5 = document.querySelector('.bottom-content div:nth-of-type(3) p');
 para5.textContent = siteContent['main-content']['vision-content'];
+
+// contact
+const contactH4 = document.querySelector('.contact h4');
+contactH4.textContent = siteContent['contact']['contact-h4'];
+
+// address
+const conPara1 = document.querySelector('.contact p:nth-of-type(1)');
+conPara1.textContent = siteContent['contact']['address'];
+
+// phone
+const conPara2 = document.querySelector('.contact p:nth-of-type(2)');
+conPara2.textContent = siteContent['contact']['phone'];
+
+// email
+const conPara3 = document.querySelector('.contact p:nth-of-type(3)');
+conPara3.textContent = siteContent['contact']['email'];
+
+const footer = document.querySelector('footer');
+footer.textContent = siteContent['footer']['copyright'];
