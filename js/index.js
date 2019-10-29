@@ -48,12 +48,21 @@ const middle = document.getElementById('middle-img');
 middle.src = siteContent["main-content"]["middle-img-src"];
 
 const links = document.querySelectorAll('a');
-links[0].textContent = siteContent.nav['nav-item-1'];
-links[1].textContent = siteContent.nav['nav-item-2'];
-links[2].textContent = siteContent.nav['nav-item-3'];
-links[3].textContent = siteContent.nav['nav-item-4'];
-links[4].textContent = siteContent.nav['nav-item-5'];
-links[5].textContent = siteContent.nav['nav-item-6'];
+// links[0].textContent = siteContent.nav['nav-item-1'];
+// links[1].textContent = siteContent.nav['nav-item-2'];
+// links[2].textContent = siteContent.nav['nav-item-3'];
+// links[3].textContent = siteContent.nav['nav-item-4'];
+// links[4].textContent = siteContent.nav['nav-item-5'];
+// links[5].textContent = siteContent.nav['nav-item-6'];
+
+const [one, two, three, four, five, six] = links;
+
+one.textContent = siteContent.nav['nav-item-1'];
+two.textContent = siteContent.nav['nav-item-2'];
+three.textContent = siteContent.nav['nav-item-3'];
+four.textContent = siteContent.nav['nav-item-4'];
+five.textContent = siteContent.nav['nav-item-5'];
+six.textContent = siteContent.nav['nav-item-6'];
 
 // new links
 
