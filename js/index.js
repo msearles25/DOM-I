@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM<br> Is<br> Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -28,7 +28,7 @@ const siteContent = {
   },
   "contact": {
     "contact-h4" : "Contact",
-    "address" : "123 Way 456 Street Somewhere, USA",
+    "address" : "123 Way 456 Street<br> Somewhere, USA",
     "phone" : "1 (888) 888-8888",
     "email" : "sales@greatidea.io",
   },
@@ -75,8 +75,8 @@ linkColor.forEach(element => {
 })
 console.log(linkColor)
 
-const ctaText = document.querySelector('h1');
-ctaText.textContent = siteContent['cta']['h1'];
+const ctaText = document.querySelector('.cta-text h1');
+ctaText.innerHTML = siteContent['cta']['h1'];
 
 const btn = document.querySelector('button');
 btn.textContent = siteContent['cta']['button'];
@@ -122,7 +122,7 @@ contactH4.textContent = siteContent['contact']['contact-h4'];
 
 // address
 const conPara1 = document.querySelector('.contact p:nth-of-type(1)');
-conPara1.textContent = siteContent['contact']['address'];
+conPara1.innerHTML = siteContent['contact']['address'];
 
 // phone
 const conPara2 = document.querySelector('.contact p:nth-of-type(2)');
